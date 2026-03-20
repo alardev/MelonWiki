@@ -84,7 +84,7 @@ To install it manually, run `protontricks [appid] uninstaller`, click `Install..
 
 #### Important: Proper Library Loading
 
-  For maximum compatibility and security, do not point`LD_PRELOAD`to a specific file path. Using a path in`LD_PRELOAD`can cause the loader to ignore the library during secure execution (setuid) and may prevent the library from finding its own dependencies.
+  For compatibility and security reasons, do not point`LD_PRELOAD`to a specific file path. Using a path in`LD_PRELOAD`can cause the loader to ignore the library during secure execution (setuid) and may prevent the library from finding its own dependencies.
 
   1. Add the game folder to your`LD_LIBRARY_PATH` environment variable.
   2. Reference the library by filename only in`LD_PRELOAD`.
@@ -135,7 +135,7 @@ To install it manually, run `protontricks [appid] uninstaller`, click `Install..
 ```sh
 chmod +x /path/to/game/folder/MelonLoader/Dependencies/Il2CppAssemblyGenerator/Cpp2IL/Cpp2IL
 ```
-This process is automated starting from release version starting from 7.2 and onwards.
+This process is automated starting from the release version 7.2 and onwards.
 
 # Contact
 
