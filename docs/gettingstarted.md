@@ -91,12 +91,12 @@ To install it manually, run `protontricks [appid] uninstaller`, click `Install..
 
   __Non-Steam launch options__:
   ```sh
-  LD_LIBRARY_PATH="/full/path/to/game/directory:$LD_LIBRARY_PATH" LD_PRELOAD="MelonLoader.Bootstrap.so" ./game_binary
+  LD_LIBRARY_PATH="/full/path/to/game/directory:$LD_LIBRARY_PATH" LD_PRELOAD="MelonLoader.Bootstrap.so:$LD_PRELOAD" ./game_binary
   ```
 
   __Steam launch options__:
   ```sh
-  LD_LIBRARY_PATH="/full/path/to/game/directory:$LD_LIBRARY_PATH" LD_PRELOAD="MelonLoader.Bootstrap.so" ./game_binary
+  LD_LIBRARY_PATH="/full/path/to/game/directory:$LD_LIBRARY_PATH" LD_PRELOAD="MelonLoader.Bootstrap.so:$LD_PRELOAD" %command%
   ```
 
   ### Linux Native Il2Cpp Games
